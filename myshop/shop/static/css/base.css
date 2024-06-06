@@ -24,6 +24,27 @@ a:hover {
     color: #c0392b;
 }
 
+button.button {
+    color: #fff;
+    background: #e74c3c;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.button:hover {
+    background: #c0392b;
+}
+
+button.button.light {
+    color: #333;
+    background: #ecf0f1;
+}
+
+
 a.button, input[type="submit"] {
     color: #fff;
     background: #e74c3c;
@@ -133,6 +154,11 @@ ul.errorlist {
     background: #2c3e50;
     color: #ecf0f1;
     overflow: auto;
+}
+
+#header .user-menu {
+    float: right;
+    padding-top: 8px;
 }
 
 #subheader {
