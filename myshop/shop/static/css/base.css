@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: #e74c3c;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c0392b;
+}
+
+a.button, input[type="submit"] {
+    color: #fff;
+    background: #e74c3c;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+a.button:hover, input[type="submit"]:hover {
+    background: #c0392b;
+}
+
+a.button.light {
+    color: #333;
+    background: #ecf0f1;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    text-align: left;
+    font-size: 16px;
+    padding: 12px;
+}
+
+tbody tr:nth-child(odd) {
+    background: #ecf0f1;
+}
+
+thead th {
+    background: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+}
+
+tbody tr.total {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: bold;
+}
+
+table.cart img {
+    width: 150px;
+}
+
+tbody td.num {
+    text-align: right;
+}
+
+td input[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+form p label, form p input {
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form p label {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+form p input {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    border: 1px solid #bdc3c7;
+    background: #ecf0f1;
+    color: #333;
+    border-radius: 8px;
+}
+
+ul.errorlist {
+    color: #e74c3c;
+    font-size: 15px;
+    margin: 0 0 0 12px;
+    padding: 12px 0;
+}
+
+#header {
+    padding: 20px 100px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    overflow: auto;
+}
+
+#subheader {
+    background: #bdc3c7;
+    color: #2c3e50;
+    padding: 20px 100px;
+    overflow: auto;
+}
+
+#header .logo {
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-right: 10%;
+}
+
+#subheader .cart {
+    float: right;
+    padding-top: 8px;
+}
+
+#content {
+    padding: 20px 100px;
+    overflow: hidden;
+    background: #ecf0f1;
+}
+
+#sidebar {
+    width: 240px;
+    padding: 30px 20px 0 0;
+    float: left;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 0;
+    list-style: none;
+    padding: 12px 16px;
+}
+
+#sidebar ul li a {
+    display: block;
+}
+
+#sidebar ul li.selected {
+    background: #e74c3c;
+    border-radius: 8px;
+}
+
+#sidebar ul li.selected a {
+    color: #fff;
+}
+
+#main {
+    float: left;
+    width: calc(100% - 260px);
+    overflow: hidden;
+}
+
+.product-list .item {
+    width: 24%;
+    padding: 16px;
+    float: left;
+    text-align: center;
+    line-height: 1.4;
+    background: #fff;
+    margin: 0 1% 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-list .item:hover {
+    transform: translateY(-5px);
+}
+
+.product-list .item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product-detail {
+    text-align: justify;
+}
+
+.product-detail .price {
+    color: #e74c3c;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.product-detail img {
+    width: 50%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.product-detail h1 {
+    margin-bottom: 10px;
+}
+
+.product-detail h2 {
+    margin-top: 10px;
+}
+
+.order-form {
+    float: left;
+    width: 60%;
+}
+
+.order-info {
+    float: right;
+    width: 300px;
+    background: #ecf0f1;
+    padding: 20px;
+    color: #333;
+    border-bottom: 4px solid #e74c3c;
+    border-radius: 8px;
+}
+
+.order-info h3 {
+    color: #e74c3c;
+    margin-top: 0;
+}
+
+.order-info ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.order-info p {
+    font-weight: bold;
+    float: right;
+}
+
+.order-info span {
+    float: right;
+}
+
+.neg {
+    color: #e74c3c;
+}
+
+.languages {
+    float: right;
+    padding-top: 8px;
+    font-size: 16px;
+}
+
+.languages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.languages ul li {
+    float: left;
+    margin: 0 0 0 12px;
+    font-size: 16px;
+}
+
+.languages p {
+    float: left;
+    margin: 0;
+}
+
+.recommendations {
+    clear: both;
+    margin-top: 20px;
+}
+
+.recommendations div {
+    float: left;
+}
+
+.recommendations img {
+    width: 220px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.recommendations p {
+    clear: both;
+}
+
+.recommendations.cart {
+    width: 60%;
+    float: left;
+    overflow: auto;
+}
+
+.recommendations.cart h3 {
+    margin-top: 0;
+}
+
+.recommendations.cart .item {
+    margin-right: 12px;
+}
+
+.recommendations.cart img {
+    width: 130px;
+}
+
+/* braintree hosted fields */
+form div.field {
+    font-size: 15px;
+    color: #333;
+    width: 320px;
+    height: 24px;
+    margin-bottom: 12px;
+    padding: 8px 14px;
+    border: 1px solid #bdc3c7;
+    background: #ecf0f1;
+    border-radius: 8px;
+}
+
+form[action="/search/"] {
+    float: right;
+    position: relative;
+}
+
+form[action="/search/"] input[type="text"] {
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-radius: 3px 0 0 3px;
+    width: 300px;
+}
+
+form[action="/search/"] input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px 20px;
+    font-size: 17px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    transition: background 0.3s;
+}
+
+form[action="/search/"] input[type="submit"]:hover {
+    background: #c0392b;
+}
