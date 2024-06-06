@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
+    'accounts.apps.AccountsConfig'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,6 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_51POdhkISG0IJPmLOUiSYTox0LM6ziRXYcQujoKYtspMoF
 STRIPE_SECRET_KEY = 'sk_test_51POdhkISG0IJPmLOupBkiI7skw4X6y8o1tJGbGQjwXW8ANaU4gb7c8G20uCjWQeCsqpq76rot57KbUq2BUZZCrBx00KoYVUXkH'  # Секретный ключ
 STRIPE_API_VERSION = '2022-08-01'
 STRIPE_WEBHOOK_SECRET = 'whsec_aacf6b8217079535895c1821f80eac1cc46c4f18699cf5f99074199dae48e6b7'
+
+LOGIN_REDIRECT_URL = 'shop:product_list'
+LOGOUT_REDIRECT_URL = 'shop:product_list'
