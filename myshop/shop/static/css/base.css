@@ -73,6 +73,19 @@ a.button.light {
     text-align: right;
 }
 
+.text-link {
+  background: none !important;
+  border: none !important;
+  color: red !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  font-size: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+
 table {
     width: 100%;
     border-spacing: 0;
