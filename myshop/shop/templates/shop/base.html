@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <title>{% block title %}My shop{% endblock %}</title>
     {% load static %} <!-- Загрузка тега static -->
-    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
 </head>
 <body>
     <div id="header">
         <a href="{% url 'shop:product_list' %}" class="logo">My shop</a>
         <div class="user-menu">
             {% if user.is_authenticated %}
-                <span>Welcome, {{ user.username }}</span>
+                <a href="{% url 'accounts:profile' %}">Welcome, {{ user.username }}</a>
                 <a href="{% url 'accounts:logout' %}">Logout</a> <!-- Обновленная ссылка для выхода -->
             {% else %}
                 <a href="{% url 'accounts:login' %}">Login</a>
@@ -24,7 +24,7 @@
             {% with total_items=cart|length %}
                 {% if total_items > 0 %}
                     Your cart:
-                    <a href="{% url "cart:cart_detail" %}">
+                    <a href="{% url 'cart:cart_detail' %}">
                         {{ total_items }} item{{ total_items|pluralize }},
                         ${{ cart.get_total_price }}
                     </a>
